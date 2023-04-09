@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Node.js Express Save Data from Html Form to Mysql Database - Tutsmake.com</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Peralta&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+  <body>
+    <img src="top.png" style="width: 100%">
+    <nav id="navv">
+        <div class="container" onclick="myFunction(this); openNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        <a href="form.html" id="page">Diary</a>
+    </nav>
+   
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="http://127.0.0.1:5500/homepage/homepage.html">Home</a>
+        <a href="entry.html">MyEntries</a>
+        <a href="http://127.0.0.1:5500/music/index.html">Music</a>
+        <a href="http://127.0.0.1:5500/about/about.html">About Us</a>
+    </div>
+
+    <div id="block">
+        <div class="container mt-4">
+            <div class="card">
+              <div class="card-body">
+            
+                <form id="myForm">
+                  <div class="form-group">
+                    <label for="firstName">LogEntry</label>
+                    <input type="date" class="form-control col-lg-9" id="LogEntry" aria-describedby="emailHelp" placeholder="Enter first name" name="LogEntry">
+                  </div>   
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Bio</label>
+                    <textarea name="message" class="form-control col-lg-9" rows="10" id="Blog"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                </form>
+          </div>
+        </div>
+    </div>
+    <script src="form.js"></script>
+    <!-- <script src="entry.js"></script> -->
+  </body>
+</html>

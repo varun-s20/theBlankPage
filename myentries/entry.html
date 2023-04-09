@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyEntries</title>
+    <link rel="stylesheet" href="entry.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Peralta&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <div id="myDiv"> -->
+    <img src="top.png" style="width: 100%">
+    <nav id="navv">
+        <div class="container" onclick="myFunction(this); openNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        <a href="entry.html" id="page">MyEntries</a>
+    </nav>
+    <!-- </div> -->
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="http://127.0.0.1:5500/homepage/homepage.html">Home</a>
+        <a href="entry.html">MyEntries</a>
+        <a href="http://127.0.0.1:5500/music/index.html">Music</a>
+        <a href="http://127.0.0.1:5500/about/about.html">About Us</a>
+    </div>
+    <div class="topnav">
+        <center>
+        <div class="search-container">
+          <form action="">
+            <input type="text" placeholder="Search.." name="search" id="search" onkeyup="search_data()" >
+          </form>
+        </center>
+        </div>
+    </div>
+
+    <a href="form.html">
+        <div class="arr-panel"><span id="sign">+</span></div>
+    </a>
+    <div id="grid"></div>
+        <script src="entry.js"></script>
+</body>
+</html>
